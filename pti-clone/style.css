@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu" , sans-serif;
+}
+
+.site{
+
+    display: flex;
+    flex-direction: column;
+}
+
+ /***  CABECALHO ***/
+
+.cabecalho{
+
+    height: 120px;
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #ffffff 0%, #DBDBDB 100%);
+}
+
+.conteudo{
+    width: 1320px;
+    margin: 0 auto;
+
+}
+
+.cabecalho .conteudo{
+
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.cabecalho .conteudo .logo{
+
+    width: 175px;
+}
+
+.cabecalho .conteudo .menus ul{
+
+    display: flex;
+    gap: 20px;
+
+    list-style: none;
+}
+
+
+/* MENU */
+
+.menu{
+    height: 60px;
+    background-image: linear-gradient(180deg, #ffffff 0%, #DBDBDB 100%);;
+    
+    display: flex;
+}
+
+.menu .conteudo{
+    display: flex;
+    align-items: center;
+}
+
+.menu ul{
+
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: #003a6c;
+    font-weight: 450;
+    padding: 20px;
+}
+
+.menu ul li a:hover{
+    background-color: #fff;
+}
+
+/** BANNER **/
+
+.banner img{
+    width: 100%;
+}
+
+.banner{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+/* Noticias e Competencias */
+
+.noticias-competencias{
+
+    background-image: linear-gradient(180deg, #00315E 0%, #000825 100%);
+
+}
+
+.noticias-competencias h2{
+    color: #fff;
+    font-weight: 500;
+    margin-top: 80px;
+    font-size: 28px;
+}
+
+.conteudo-noticias{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-noticias{
+
+    flex-basis: 24%;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.card-noticias .card-noticias-imagem{
+
+    height: 220px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-noticias .card-noticias-data{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #003c6ab6;
+
+    position: absolute;
+    top: 180px;
+    width: 100%;
+    
+    color: #fff;
+    font-weight: 300;
+}
+
+.card-noticias .card-noticias-imagem img{
+
+    width: 100%;
+    transition: all 0.7s ease-out;
+}
+
+.card-noticias .card-noticias-imagem:hover img{
+
+    transform: scale(1.3);
+
+}
+
+.card-noticias .card-noticias-texto{
+
+    padding: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    color: #003c6a;
+}
+
+.card-noticias .leia-mais .btn{
+
+    background-color: #DBDBDB;
+    padding: 5px 10px;
+    border-radius: 15px;
+
+    text-decoration: none;
+    float: right;
+    margin-right: 20px;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+        /* Competencias */
+
+.noticias-competencias .conteudo-competencias{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.noticias-competencias .conteudo-competencias .competencias{
+
+    flex: 1 1 30%;
+    background-color: blue;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 35px;
+    color: #fff;
+
+    position: relative;
+    width: 290px;
+    height: 320px;
+    overflow: hidden;
+    border: 1px solid #00315E;
+    
+
+}
+
+.noticias-competencias .conteudo-competencias .competencias img{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    border-radius: 30px;
+    transition: transform 1s;
+
+}
+
+.noticias-competencias .conteudo-competencias .competencias img:hover{
+
+    transform: scale(1.3);
+
+}
+
+.noticias-competencias .conteudo-competencias .competencias h3{
+
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 20px;
+    
+}
+
+
+        /* RODAPE */
+
+.rodape{
+
+    display: flex;
+    background-image: linear-gradient(180deg, #00315E 0%, #000825 100%);
+    justify-content: space-between;
+    
+    
+}
+
+    /* Lado Esquerdo */
+
+.rodape .lado-esquerdo {
+    
+    flex-direction: column;
+    width: 50%;
+    padding: 0px 0px 40px 150px;
+    
+}
+
+.rodape .lado-esquerdo .logo{
+    height: 100px;
+    
+}
+
+.rodape .lado-esquerdo .redes-sociais ul {
+    display: inline-flex;
+    list-style: none;
+    justify-content: space-evenly;
+    
+}
+
+.rodape .lado-esquerdo .redes-sociais ul li{
+
+    padding: 0px 5px;
+}
+
+.rodape .lado-esquerdo .endereco ul li{
+    color: #fff;
+    list-style: none;
+}
+
+    /* Lado Direito */
+
+.rodape .lado-direito{
+
+    width: 50%;
+    padding: 20px;
+    padding: 35px 0px 0px 80px;
+    
+}
+
+.rodape .lado-direito .texto ul {
+    list-style: none;
+
+}
+
+.rodape .lado-direito .texto ul a{
+
+    color: #fff;
+    text-decoration: none;
+}
+
+.rodape .lado-direito .texto ul a:hover{
+    color: lightblue;
+}
+
+        /* Direitos */
+
+
+.direito{
+
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(180deg, #00315E 0%, #000825 100%);
+    color: #fff;
+    
+   
+}
